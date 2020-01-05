@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package pagent;
+
+option go_package="github.com/synerex/proto_people_agent";
+
+//import "google/protobuf/timestamp.proto";
+//import "google/protobuf/duration.proto";
+
+// Agent Message (mainly for supply)
+message PAgent
+{
+    int32 id = 1;
+    repeated double point = 2;
+}
+
+message PAgents
+{
+    repeated PAgent agents = 1;
+}
+
