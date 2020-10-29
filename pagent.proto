@@ -4,7 +4,7 @@ package pagent;
 
 option go_package="github.com/synerex/proto_people_agent";
 
-//import "google/protobuf/timestamp.proto";
+import "google/protobuf/timestamp.proto";
 //import "google/protobuf/duration.proto";
 
 // Agent Message (mainly for supply)
@@ -17,5 +17,6 @@ message PAgent
 message PAgents
 {
     repeated PAgent agents = 1;
+    google.protobuf.Timestamp ts = 2;
 }
 
